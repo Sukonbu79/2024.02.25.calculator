@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #eee;
+}
+
+main {
+  margin: 16px auto;
+  width: 400px;
+  background-color: #fff;
+  padding: 8px;
+}
+
+div {
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+}
+
+#display {
+  display: block;
+  border: solid 4px #aaa;
+  box-sizing: border-box;
+  border-radius: 8px;
+  text-align: right;
+  font-size: 64px;
+  line-height: 80px;
+  margin: 8px;
+  padding: 0;
+  height: 80px;
+}
+
+button {
+  display: block;
+  font-size: 48px;
+  box-sizing: border-box;
+  padding: 12px 0;
+  background-color: #eee;
+}
+
+button:hover {
+  background-color: #aaa;
+}
+
+main > div:not(:nth-child(7)) button {
+  width: calc((100% - 8px * 3) / 4);
+}
+
+main > div:nth-child(7) button {
+  width: calc((100% - 8px * 2) / 3);
+}
